@@ -17,21 +17,43 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
-  --body-font-family: "Sourcesanspro-Regular";
-  --heading-font-family: "Sourcesanspro-Regular";
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  --body-font-family: "Sourcesanspro-Regular", "Sourcesanspro-Regular Fallback";
+  --heading-font-family: "Sourcesanspro-Regular", "Sourcesanspro-Regular Fallback";
+  --body-font-size-m: 44.016px;
+  --body-font-size-s: 30.002px;
+  --body-font-size-xs: 20px;
+  --heading-font-size-xxl: 89.999px;
+  --heading-font-size-xl: 39.998px;
+  --heading-font-size-l: 39.998px;
+  --heading-font-size-m: 44.016px;
+  --heading-font-size-s: 30.002px;
+  --heading-font-size-xs: 20px;
   --nav-height: 64px;
 }
 
 /* fallback fonts */
+@font-face {
+  font-family:"Sourcesanspro-Extralight Fallback";
+  font-style:normal;
+  font-weight:normal;
+  src:local("Arial");
+  ascent-override:104.50%;
+  descent-override:32.72%;
+  line-gap-override:0.00%;
+  size-adjust:89.39%;
+}
+
+@font-face {
+  font-family:"Sourcesanspro-SemiBold Fallback";
+  font-style:normal;
+  font-weight:bold;
+  src:local("Arial Bold");
+  ascent-override:109.21%;
+  descent-override:30.30%;
+  line-gap-override:0.00%;
+  size-adjust:90.10%;
+}
+
 @font-face {
   font-family:"Sourcesanspro-light Fallback";
   font-style:normal;
@@ -43,17 +65,28 @@
   size-adjust:90.74%;
 }
 
+@font-face {
+  font-family:"Sourcesanspro-Regular Fallback";
+  font-style:normal;
+  font-weight:normal;
+  src:local("Arial");
+  ascent-override:100.97%;
+  descent-override:36.35%;
+  line-gap-override:0.00%;
+  size-adjust:94.30%;
+}
+
 @media (width>=900px) {
   :root {
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+    --body-font-size-m: 44.016px;
+    --body-font-size-s: 30.002px;
+    --body-font-size-xs: 20px;
+    --heading-font-size-xxl: 89.999px;
+    --heading-font-size-xl: 39.998px;
+    --heading-font-size-l: 39.998px;
+    --heading-font-size-m: 44.016px;
+    --heading-font-size-s: 30.002px;
+    --heading-font-size-xs: 20px;
   }
 }
 
