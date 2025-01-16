@@ -1,66 +1,70 @@
 
-.absa-cards-wrapper .absa-cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.absa-cards-wrapper .absa-cards > ul {
+.absa-cards-wrapper > .absa-cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: row; /* Ensure the items are aligned side by side */
-  justify-content: space-between; /* Evenly space out the cards */
-  width: 100%;
+  display: flex; /* Use flex to align items horizontally */
+  justify-content: space-between; /* Space items evenly */
+  gap: 20px; /* Adjust spacing between columns */
 }
 
-.absa-cards-wrapper .absa-cards > ul > li {
-  border: none; /* Remove the border */
-  background-color: transparent; /* Set background to transparent */
-  flex: 1 1 calc(33.333% - 16px); /* Adjust flex properties to fit three cards in a row */
-  margin: 8px; /* Add some horizontal margin between cards */
+.absa-cards-wrapper > .absa-cards > ul > li {
+  flex: 1; /* Ensure each card takes equal space */
   display: flex;
-  flex-direction: column; /* Ensure image and body are stacked vertically */
+  flex-direction: column; /* Vertical stacking of image and text */
+  border: none; /* Remove border */
+  background-color: transparent; /* Remove background color */
 }
 
-.absa-cards-wrapper .absa-cards .absa-cards-card-body {
-  display: flex;
-  flex-direction: column; /* Ensure the text and button are stacked vertically */
-  padding: 16px;
-  justify-content: space-between; /* Ensure proper spacing between elements */
-}
-
-.absa-cards-wrapper .absa-cards .absa-cards-card-image {
+.absa-cards-wrapper > .absa-cards .absa-cards-card-image {
   width: 100%;
   line-height: 0;
-  flex: 0 0 auto; /* Ensure the image does not stretch */
+  margin-bottom: 10px; /* Add margin between image and body */
 }
 
-.absa-cards-wrapper .absa-cards > ul > li img {
+.absa-cards-wrapper > .absa-cards > ul > li img {
   width: 100%;
-  height: auto;
+  height: 200px; /* Set a consistent height */
   object-fit: cover;
 }
 
-.absa-cards-wrapper .absa-cards .button-container {
-  margin-top: 16px; /* Adjust margin to align the button better */
-  flex: 0 0 auto; /* Ensure the button container does not stretch */
+.absa-cards-wrapper > .absa-cards .absa-cards-card-body {
+  flex: 1; /* Ensure the body content takes up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly */
 }
 
-.absa-cards-wrapper .absa-cards .button {
-  color: #ff0000; /* Change button text color to red */
+.absa-cards-wrapper > .absa-cards .absa-cards-card-body h5 {
+  margin: 10px 0; /* Adjust spacing for the title */
+  color: #000; /* Ensure title color is black */
+  font-size: 1.2rem; /* Adjust font size to match original */
+}
+
+.absa-cards-wrapper > .absa-cards .button-container {
+  margin-top: auto; /* Push the button to the bottom of the card */
+  display: flex;
+  flex-direction: row; /* Ensure button and icon are side by side */
+  align-items: center;
+}
+
+.absa-cards-wrapper > .absa-cards .button-container .button {
+  color: red;
   background: none; /* Remove button background */
   border: none; /* Remove button border */
   padding: 0; /* Remove button padding */
-  text-decoration: none; /* Remove underline from link */
+  text-decoration: none; /* Remove underline */
   display: inline-flex;
-  align-items: center; /* Align the text and icon vertically */
-  font-weight: bold; /* Make button text bold */
+  align-items: center;
+  font-size: 1rem; /* Adjust font size */
 }
 
-.absa-cards-wrapper .absa-cards .button::after {
-  content: '>'; /* Add the right-pointing arrow icon */
-  margin-left: 4px; /* Add some space between the text and the icon */
-  color: #ff0000; /* Ensure the arrow icon is also red */
+.absa-cards-wrapper > .absa-cards .button-container .button::after {
+  content: ' ➔'; /* Right arrow icon */
+  margin-left: 5px; /* Adjust spacing between text and arrow */
+}
+
+/* Adjust link hover state to match original */
+.absa-cards-wrapper > .absa-cards .button-container .button:hover {
+  text-decoration: underline;
 }
