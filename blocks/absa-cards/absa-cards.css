@@ -1,0 +1,62 @@
+
+.absa-cards-wrapper .absa-cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox to align items horizontally */
+  flex-direction: row; /* Ensure items are in a row */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+.absa-cards-wrapper .absa-cards > ul > li {
+  flex: 1; /* Each item takes equal space */
+  margin: 0 10px; /* Add margin between items */
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  border: none; /* Remove border */
+  background-color: transparent; /* Ensure background is transparent */
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-body {
+  display: flex;
+  flex-direction: column; /* Ensure elements stack vertically */
+  margin-top: 8px; /* Adjust space between image and body */
+  padding: 0; /* Remove additional padding */
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-image {
+  line-height: 0;
+  flex: 0 0 auto; /* Prevent the image container from growing/shrinking */
+}
+
+.absa-cards-wrapper .absa-cards > ul > li img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-body h5 {
+  margin: 0 0 6px; /* Adjust margin below the title */
+  font-size: 1.2em; /* Adjust font size */
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-body .button-container {
+  margin-top: auto; /* Push the link to the bottom */
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-body .button-container .button {
+  color: red; /* Link text color */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  font-size: inherit; /* Inherit font size */
+  display: flex;
+  flex-direction: row; /* Ensure text and arrow are side by side */
+  align-items: center;
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-body .button-container .button::after {
+  content: '>'; /* Arrow icon */
+  margin-left: 5px; /* Space between text and icon */
+  color: red; /* Arrow color */
+}
