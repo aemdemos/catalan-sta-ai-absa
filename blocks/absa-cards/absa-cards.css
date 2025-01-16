@@ -1,0 +1,58 @@
+
+.absa-cards-wrapper .absa-cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ensure flexbox layout */
+  flex-direction: row; /* Ensure elements are side by side */
+  justify-content: space-between; /* Space out the cards evenly */
+  gap: 20px; /* Adjust the gap between cards for a closer match */
+}
+
+.absa-cards-wrapper .absa-cards > ul > li {
+  border: none; /* Remove the border */
+  background-color: transparent; /* Make the background transparent */
+  flex: 1; /* Allow the items to grow and take equal width */
+  display: flex; /* Use flexbox for internal layout */
+  flex-direction: column; /* Stack elements vertically inside each card */
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-image {
+  line-height: 0;
+  margin-bottom: 10px; /* Add margin below the image for spacing */
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-body {
+  padding: 0 20px; /* Add padding within the card body */
+  flex-grow: 1; /* Allow the card body to grow and fill available space */
+  display: flex; /* Use flexbox for internal layout */
+  flex-direction: column; /* Stack elements vertically inside the card body */
+  justify-content: space-between; /* Distribute space evenly */
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-body h5 {
+  margin: 10px 0; /* Add margin for the title */
+  flex-shrink: 0; /* Prevent the title from shrinking */
+}
+
+.absa-cards-wrapper .absa-cards .button-container {
+  margin-top: auto; /* Push the button container to the bottom */
+  flex-shrink: 0; /* Prevent the button container from shrinking */
+}
+
+.absa-cards-wrapper .absa-cards .button {
+  color: #e4002b; /* Change the button text color to red */
+  background: none; /* Remove the background color */
+  border: none; /* Remove any border */
+  text-decoration: underline; /* Ensure underline text */
+  padding: 0; /* Remove any padding */
+  font-size: inherit; /* Ensure the font size matches the surrounding text */
+}
+
+.absa-cards-wrapper .absa-cards > ul > li img {
+  width: 100%; /* Ensure the images take full width of their container */
+  aspect-ratio: 4 / 3; /* Maintain aspect ratio */
+  object-fit: cover;
+  display: block; /* Ensure the image is displayed as a block element */
+}
