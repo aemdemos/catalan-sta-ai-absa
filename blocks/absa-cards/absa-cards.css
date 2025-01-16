@@ -36,7 +36,7 @@
 }
 
 .absa-cards-wrapper .absa-cards .absa-cards-card-body h5 {
-  margin: 0 0 6px 0; /* Adjust margin below the title */
+  margin: 0 0 6px; /* Adjust margin below the title */
   font-size: 1.2em; /* Adjust font size */
 }
 
